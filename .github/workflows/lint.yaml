@@ -8,9 +8,18 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: stylelinter
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: SCSS Lint
         uses: actions-hub/stylelint@v1.1.3
         env:
           INDENT_SPACE: 2
-          PATTERN: "assets/**/*.(scss|html|ejs])"
+          PATTERN: "./assets/**/*.scss"
+          CONFIG_PATH: ./.stylelintrc.json
+      - name: EJS Lint
+        uses: actions-hub/stylelint@v1.1.3
+        env:
+          INDENT_SPACE: 2
+          PATTERN: "./templates/**/*.ejs"
           CONFIG_PATH: ./.stylelintrc.json

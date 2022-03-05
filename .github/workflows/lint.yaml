@@ -1,0 +1,28 @@
+name: Lint
+
+on: [push, pull_request, page_build, deployment]
+
+jobs:
+  run-linters:
+    name: Run stylelint
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        continue-on-error: false
+
+      - name: SCSS Lint
+        uses: actions-hub/stylelint@v1.1.3
+        continue-on-error: true
+        env:
+          INDENT_SPACE: 2
+          PATTERN: "./assets/**/*.scss"
+          CONFIG_PATH: ./.stylelintrc.json
+      - name: EJS Lint
+        uses: actions-hub/stylelint@v1.1.3
+        continue-on-error: true
+        env:
+          INDENT_SPACE: 2
+          PATTERN: "./templates/**/*.ejs"
+          CONFIG_PATH: ./.stylelintrc.json

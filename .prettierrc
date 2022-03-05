@@ -1,0 +1,25 @@
+{
+  "tabWidth": 2,
+  "htmlWhitespaceSensitivity": "css",
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": ["**/*.scss", "**/*.html", "**/*.ejs"],
+      "options": {
+        "tabWidth": 2,
+        "htmlWhitespaceSensitivity": "css",
+        "trailingComma": "all",
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["**/*.js", "**/*.ts"],
+      "options": {
+        "tabWidth": 2,
+        "htmlWhitespaceSensitivity": "css",
+        "trailingComma": "all",
+        "singleQuote": true
+      }
+    }
+  ]
+}

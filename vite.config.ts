@@ -1,11 +1,30 @@
 import { defineConfig } from 'vite';
-import imagePresets, { widthPreset } from 'vite-plugin-image-presets';
-import imagemin from 'vite-plugin-imagemin';
+import imagePresetsPlugin, { widthPreset } from 'vite-plugin-image-presets';
+import imageMinifierPlugin from 'vite-plugin-imagemin';
+import { createHtmlPlugin } from 'vite-plugin-html';
+import checkerPlugin from 'vite-plugin-checker';
+import { VitePWA as pwaPlugin } from 'vite-plugin-pwa';
+import babelPlugin from 'vite-plugin-babel';
 
 export default defineConfig({
   base: './',
   plugins: [
-    imagePresets({
+    checkerPlugin({ typescript: true }),
+    pwaPlugin(),
+    babelPlugin(),
+    createHtmlPlugin({
+      minify: true,
+      entry: './assets/scripts/main.ts',
+      inject: {
+        data: {
+          title: 'test',
+          template: (template: string) =>
+            `${__dirname}/templates/${template}.ejs`,
+        },
+      },
+      template: './index.html',
+    }),
+    imagePresetsPlugin({
       thumbnail: widthPreset({
         class: 'img thumb',
         loading: 'lazy',
@@ -16,7 +35,7 @@ export default defineConfig({
         },
       }),
     }),
-    imagemin({
+    imageMinifierPlugin({
       gifsicle: {
         optimizationLevel: 7,
         interlaced: false,

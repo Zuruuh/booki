@@ -13,10 +13,6 @@ dist
 dist-ssr
 *.local
 
-# App Secret
-.env.local
-.env.*.local
-
 # Editor directories and files
 .vscode/*
 /.ignored/

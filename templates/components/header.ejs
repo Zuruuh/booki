@@ -1,0 +1,17 @@
+<%- include(template('layout/navbar/navbar')) %>
+<header>
+    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+    <p>En plein centre ville ou en pleine nature</p>
+    <%- include(template('components/searchbar')) %>
+    <%  const filters = data('filters') %>
+    <div class="filters">
+        <span>Filtres</span>
+        <%  for (const filter of filters) { %>
+            <%- include(template('components/filter'), { filter }) %>
+        <% } %>
+    </div>
+    <div>
+        <i class="fa-solid fa-info"></i>
+        <h5>Plus de 500 logements sont disponibles dans cette ville</h5>
+    </div>
+</header>

@@ -6,6 +6,8 @@ import checkerPlugin from 'vite-plugin-checker';
 import { VitePWA as pwaPlugin } from 'vite-plugin-pwa';
 import babelPlugin from 'vite-plugin-babel';
 
+type Breakpoint = 'sm' | 'md' | 'lg' | 'xl';
+
 export default defineConfig({
   base: './',
   plugins: [
@@ -17,9 +19,12 @@ export default defineConfig({
       entry: './assets/scripts/main.ts',
       inject: {
         data: {
-          title: 'test',
-          template: (template: string) =>
+          template: (template: string): string =>
             `${__dirname}/templates/${template}.ejs`,
+          data: (json: string): unknown =>
+            require(`${__dirname}/data/${json}.json`),
+          image: (collection: string, image: string, size: Breakpoint = 'md') =>
+            `./assets/images/${collection}/${size}/${image}`,
         },
       },
       template: './index.html',

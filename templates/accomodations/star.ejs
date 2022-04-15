@@ -1,0 +1,7 @@
+<% Array.from({ length: 5 }).map((_, i) => { %>
+    <% if (i < stars) { %>
+        <i class="fa-solid fa-star star-colored"></i>
+    <% } else { %>
+        <i class="fa-solid fa-star"></i>
+    <% } %>
+<% }) %>

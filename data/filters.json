@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Économique",
+    "icon": "fa-solid fa-money-bill-wave"
+  },
+  {
+    "label": "Familial",
+    "icon": "fa-solid fa-child"
+  },
+  {
+    "label": "Romantique",
+    "icon": "fa-solid fa-heart"
+  },
+  {
+    "label": "Animaux autorisés",
+    "icon": "fa-solid fa-dog"
+  }
+]

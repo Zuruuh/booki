@@ -1,0 +1,10 @@
+<article class="card card-vertical">
+    <img src="<%- image("accomodations", accomodation.thumbnail) %>" class="card-thumbnail" />
+    <div class="card-info">
+        <a href="#"><%- accomodation.title %></a>
+        <span>Nuit à partir de <b><%- accomodation.pricePerNight %></b></span>
+        <div class="card-rating">
+            <%- include(template('accomodations/star'), { stars: accomodation.star }) %>
+        </div>
+    </div>
+</article>

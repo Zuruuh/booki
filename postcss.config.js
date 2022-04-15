@@ -1,10 +1,8 @@
-const postcss = () => ({
+module.exports = {
   plugins: [
     require('autoprefixer')(),
     require('@fullhuman/postcss-purgecss')({
-      content: ['./**/*.html', './**/*.ejs'],
+      content: ['./**/*.html', './templates/**/*.ejs', './data/**/*.json'],
     }),
   ],
-});
-
-module.exports = postcss;
+};

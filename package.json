@@ -22,7 +22,7 @@
     "@types/ejs": "^3.1.0",
     "@types/node": "^17.0.21",
     "autoprefixer": "^10.4.2",
-    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "ejs": "^3.1.6",
     "nodemon": "^2.0.15",
     "normalize-css": "^2.3.1",

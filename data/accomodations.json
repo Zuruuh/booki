@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Auberge La Cannebière",
+    "pricePerNight": 25,
+    "stars": 4,
+    "thumbnail": "marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+  },
+  {
+    "title": "Hôtel du port",
+    "pricePerNight": 52,
+    "stars": 5,
+    "thumbnail": "fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+  },
+  {
+    "title": "Hôtel Les mouettes",
+    "pricePerNight": 76,
+    "stars": 4,
+    "thumbnail": "reisetopia-B8WIgxA_PFU-unsplash.jpg"
+  },
+  {
+    "title": "Hôtel de la mer",
+    "pricePerNight": 46,
+    "stars": 3,
+    "thumbnail": "annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+  },
+  {
+    "title": "Auberge Le Panier",
+    "pricePerNight": 23,
+    "stars": 4,
+    "thumbnail": "nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+  },
+  {
+    "title": "Hôtel chez Amina",
+    "pricePerNight": 96,
+    "stars": 5,
+    "thumbnail": "febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+  },
+  {
+    "title": "Hôtel Le soleil du matin",
+    "pricePerNight": 128,
+    "stars": 5,
+    "popular": true,
+    "thumbnail": "emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+  },
+  {
+    "title": "Au coeur de l'eau Chambres d'hôtel",
+    "pricePerNight": 71,
+    "stars": 4,
+    "popular": true,
+    "thumbnail": "aw-creative-VGs8z60yT2c-unsplash.jpg"
+  },
+  {
+    "title": "Hôtel Tout bleu et Blanc",
+    "pricePerNight": 68,
+    "stars": 4,
+    "popular": true,
+    "thumbnail": "febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+  }
+]

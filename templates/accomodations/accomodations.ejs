@@ -1,0 +1,11 @@
+<% const accomodations = data('accomodations') %>
+<section class="container col-md-9">
+    <% for (const accomodation of accomodations.filter((acc) => !acc.popular)) {%>
+        <%- include(template('accomodations/accomodation'), { accomodation }) %>
+    <% } %>
+</section>
+<aside class="col-md-3">
+    <% for (const accomodation of accomodations.filter((acc) => !acc.popular)) {%>
+        <%- include(template('accomodations/popular'), { accomodation }) %>
+    <% } %>
+</aside>

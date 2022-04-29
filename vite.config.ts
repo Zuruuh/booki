@@ -3,7 +3,6 @@ import imagePresetsPlugin, { widthPreset } from 'vite-plugin-image-presets';
 import imageMinifierPlugin from 'vite-plugin-imagemin';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import checkerPlugin from 'vite-plugin-checker';
-import { VitePWA as pwaPlugin } from 'vite-plugin-pwa';
 import babelPlugin from 'vite-plugin-babel';
 
 type Breakpoint = 'sm' | 'md' | 'lg' | 'xl';
@@ -12,7 +11,6 @@ export default defineConfig({
   base: './',
   plugins: [
     checkerPlugin({ typescript: true }),
-    pwaPlugin(),
     babelPlugin(),
     createHtmlPlugin({
       minify: true,

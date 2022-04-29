@@ -1,0 +1,18 @@
+[
+  {
+    "label": "A propos",
+    "links": [
+      "Fonctionnement du site",
+      "Conditions Générales du site",
+      "Données et confidentialité"
+    ]
+  },
+  {
+    "label": "Nos Hébergements",
+    "links": ["Charte qualité", "Soumettre votre hôtel"]
+  },
+  {
+    "label": "Assistance",
+    "links": ["Centre d'aide", "Nous contacter"]
+  }
+]

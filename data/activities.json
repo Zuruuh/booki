@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "title": "Vieux Port",
+    "size": "xl",
+    "thumbnail": "reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+  },
+  {
+    "title": "Fort de Pomègues",
+    "size": "lg",
+    "thumbnail": "paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+  },
+  {
+    "title": "Îles du Frioul",
+    "size": "sm",
+    "thumbnail": "kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+  },
+  {
+    "title": "Parc National des Calanques",
+    "size": "xl",
+    "thumbnail": "kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+  },
+  {
+    "title": "Notre-Dame-de-la-Garde",
+    "size": "md",
+    "thumbnail": "florian-wehde-xW9e8gdotxI-unsplash.jpg"
+  },
+  {
+    "title": "Parc Longchamp",
+    "size": "md",
+    "thumbnail": "lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+  }
+]

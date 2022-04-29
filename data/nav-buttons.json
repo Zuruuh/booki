@@ -1,0 +1,11 @@
+[
+  {
+    "label": "Hébergements",
+    "href": "#acccomodations",
+    "active": true
+  },
+  {
+    "label": "Activités",
+    "href": "#activities"
+  }
+]

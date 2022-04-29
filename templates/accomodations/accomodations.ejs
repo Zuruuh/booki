@@ -1,11 +1,13 @@
-<% const accomodations = data('accomodations') %>
-<section class="container col-md-9">
+<section id="accomodations">
+    <% const accomodations = data('accomodations') %>
+    <section class="container accomodations-container">
     <% for (const accomodation of accomodations.filter((acc) => !acc.popular)) {%>
-        <%- include(template('accomodations/accomodation'), { accomodation }) %>
-    <% } %>
+        <%- include(template('accomodations/accomodation'), { accomodation, classes: 'card horizontal' }) %>
+        <% } %>
+    </section>
+    <aside class="container popular-container">
+        <% for (const accomodation of accomodations.filter((acc) => acc.popular)) {%>
+            <%- include(template('accomodations/accomodation'), { accomodation, classes: 'card vertical' }) %>
+            <% } %>
+    </aside>
 </section>
-<aside class="col-md-3">
-    <% for (const accomodation of accomodations.filter((acc) => !acc.popular)) {%>
-        <%- include(template('accomodations/popular'), { accomodation }) %>
-    <% } %>
-</aside>

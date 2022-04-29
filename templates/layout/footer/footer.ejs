@@ -1,0 +1,6 @@
+<footer class="layout">
+    <% const footer = data('footer'); %>
+    <% for (const section of footer) { %>
+        <%- include(template('layout/footer/footer-section'), { section }) %>
+    <% } %>
+</footer>

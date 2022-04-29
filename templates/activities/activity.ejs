@@ -1,0 +1,14 @@
+<a href="#">
+    <article class="activity <%= activity.size %>">
+        <%- include(template('assets/image'), {
+            collection: 'activities',
+            thumbnail: activity.thumbnail,
+            attributes: {
+                class: ['activity-thumbnail']
+            }
+        }) %>
+        <div>
+            <h5><%= activity.title %></h5>
+        </div>
+    </article>
+</a>

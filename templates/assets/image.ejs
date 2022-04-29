@@ -1,0 +1,5 @@
+<picture <%- attributes ? Object.keys(attributes).map((key) => `${key}="${attributes[key]}"`).join(' ') : null %> >
+    <source media="(max-width: 992px)" srcset="<%- image(collection, thumbnail, 'sm') %>"/>
+    <source media="(max-width: 768px)" srcset="<%- image(collection, thumbnail, 'md') %>"/>
+    <img src="<%- image(collection, thumbnail, 'lg') %>"/>
+</picture>

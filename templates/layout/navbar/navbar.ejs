@@ -1,0 +1,12 @@
+<nav class="layout">
+    <a href="#">
+        <img src="/assets/images/logo/Booki.png" />
+    </a>
+
+    <div>
+        <% const navButtons = data('nav-buttons') %>
+        <% for (const button of navButtons) { %>
+            <%- include(template('layout/navbar/nav-button'), { button }) %>
+        <% } %>
+    </div>
+</nav>

@@ -3,10 +3,10 @@
         <img src="/assets/images/logo/Booki.png" />
     </a>
 
-    <div>
+    <ul>
         <% const navButtons = data('nav-buttons') %>
         <% for (const button of navButtons) { %>
             <%- include(template('layout/navbar/nav-button'), { button }) %>
         <% } %>
-    </div>
+    </ul>
 </nav>

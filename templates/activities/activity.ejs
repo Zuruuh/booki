@@ -1,5 +1,8 @@
-<a href="#">
-    <article class="activity <%= activity.size %>">
+<% if (index % 3 === 2) { %>
+    <div class="activity-group">
+<% } %>
+<a href="#"  class="activity <%= activity.size %>">
+    <article>
         <%- include(template('assets/image'), {
             collection: 'activities',
             thumbnail: activity.thumbnail,
@@ -12,3 +15,6 @@
         </div>
     </article>
 </a>
+<% if (index % 3 === 0) { %>
+    </div>
+<% } %>

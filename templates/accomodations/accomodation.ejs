@@ -6,10 +6,12 @@
             })
         %>
         <div class="card-info">
-            <h5><%- accomodation.title %></h5>
-            <span>Nuit à partir de <b><%- accomodation.pricePerNight %></b></span>
+            <div class="card-text">
+                <h5><%- accomodation.title %></h5>
+                <span>Nuit à partir de <b><%- accomodation.pricePerNight %>€</b></span>
+            </div>
             <div class="card-rating">
-                <%- include(template('accomodations/star'), { stars: accomodation.star }) %>
+                <%- include(template('accomodations/star'), { stars: accomodation.stars }) %>
             </div>
         </div>
     </article>

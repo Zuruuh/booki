@@ -1,0 +1,49 @@
+header.layout {
+  @include page-content;
+  h2 {
+    font-size: 1.95rem;
+    margin: 1.6rem 0px;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .filters {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    & > span {
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0px;
+    i {
+      @include flex-center;
+      color: $primary;
+      border: 0.1rem solid $tertiary;
+      border-radius: 50%;
+      width: 2.4rem;
+      height: 2.4rem;
+      padding: 1.2rem;
+      margin-right: 1.2rem;
+      font-size: 1.2rem;
+    }
+    h6 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }
+}

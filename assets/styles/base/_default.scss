@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: Raleway, Sans-Serif;
+}
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

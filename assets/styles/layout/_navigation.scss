@@ -1,0 +1,44 @@
+nav.layout {
+  padding: 5rem 1.5rem 0px 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  img {
+    width: 10rem;
+    height: 5rem;
+  }
+  ul {
+    display: flex;
+    li {
+      list-style-type: none;
+      width: 16rem;
+      margin-left: 7rem;
+      text-align: center;
+      font-size: 1.2rem;
+      &:nth-last-child(1n) {
+        margin-left: 0rem;
+      }
+      a {
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 200;
+        letter-spacing: 0.05rem;
+      }
+      &.active {
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 16.2rem;
+          height: 0.2rem;
+          background-color: $primary;
+          top: 0;
+        }
+        a {
+          color: $primary;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

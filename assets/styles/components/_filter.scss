@@ -1,0 +1,26 @@
+li.filter {
+  display: flex;
+  position: relative;
+  div {
+    @include flex-center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $secondary;
+    z-index: 1;
+    transform: translateX(50%);
+    i.fa-solid {
+      color: $primary;
+      font-size: 1.9rem;
+    }
+  }
+  & span.label {
+    @include flex-center;
+    width: auto;
+    padding: 0.5rem 1.5rem 0.5rem 2.75rem;
+    border-radius: 0px 2.5rem 2.5rem 0px;
+    border: 0.2rem solid $tertiary;
+    font-weight: 800;
+    font-size: 1.6rem;
+  }
+}

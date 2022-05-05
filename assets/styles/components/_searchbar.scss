@@ -1,0 +1,37 @@
+form.searchbar {
+  display: flex;
+  flex-wrap: nowrap;
+  div {
+    @include flex-center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 25% 0px 0px 25%;
+    background-color: $tertiary;
+    i {
+      font-size: 1.8rem;
+    }
+  }
+  input:not(.submit) {
+    border-width: 0.1rem 0 0.1rem 0;
+    border-style: solid;
+    border-color: $tertiary;
+    padding-right: 4.5rem;
+    &::placeholder {
+      padding-left: 1.5rem;
+      color: #000;
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
+  }
+  .submit {
+    width: auto;
+    border: 0;
+    border-radius: 0px 1.5rem 1.5rem 0px;
+    background-color: $primary;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0.08rem;
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,9 @@
+@mixin page-content {
+  padding: 0px 5rem;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

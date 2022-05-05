@@ -1,7 +1,10 @@
 <section id="activities">
     <h2>Activités à Marseille</h2>
-    <% const activities = data('activities'); %>
-    <% for (const activity of activities) {%>
-        <%- include(template('activities/activity'), { activity }) %>
-    <% } %>
+    <div>
+        <% const activities = data('activities'); %>
+        <%- activities.map((activity, index) => include(template('activities/activity'), { activity, index: index + 1 })).join('') %>
+        <!-- for (const activity of activities) {%>
+            - include(template('activities/activity'), { activity, index: 0 }) %>
+         } %> -->
+    </div>
 </section>

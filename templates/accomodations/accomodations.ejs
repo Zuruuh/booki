@@ -1,13 +1,30 @@
+<% const accomodations = data('accomodations') %>
+
 <section id="accomodations">
-    <% const accomodations = data('accomodations') %>
-    <section class="container accomodations-container">
-    <% for (const accomodation of accomodations.filter((acc) => !acc.popular)) {%>
-        <%- include(template('accomodations/accomodation'), { accomodation, classes: 'card horizontal' }) %>
-        <% } %>
-    </section>
-    <aside class="container popular-container">
-        <% for (const accomodation of accomodations.filter((acc) => acc.popular)) {%>
-            <%- include(template('accomodations/accomodation'), { accomodation, classes: 'card vertical' }) %>
+    <section class="container horizontal">
+        <header>
+            <b>Hébergements à Marseille</b>
+        </header>
+        <div class="content">
+            <% for (const accomodation of accomodations.filter((acc) => !acc.popular)) {%>
+                <%- include(template('accomodations/accomodation'), { accomodation, classes: 'card horizontal' }) %>
             <% } %>
+        </div>
+        <footer>
+            <button>
+                Afficher plus
+            </button>
+        </footer>
+    </section>
+    <aside class="container vertical">
+        <header>
+            <b>Les plus populaires</b>
+            <i class="fa-solid fa-star"></i>    
+        </header>
+        <div class="content">
+            <% for (const accomodation of accomodations.filter((acc) => acc.popular)) {%>
+                <%- include(template('accomodations/accomodation'), { accomodation, classes: 'card vertical' }) %>
+            <% } %>
+        </div>
     </aside>
 </section>

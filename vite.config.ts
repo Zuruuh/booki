@@ -4,11 +4,18 @@ import imageMinifierPlugin from 'vite-plugin-imagemin';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import checkerPlugin from 'vite-plugin-checker';
 import babelPlugin from 'vite-plugin-babel';
+import fontsPlugin from 'vite-plugin-fonts';
+import { resolve } from 'path';
 
 type Breakpoint = 'sm' | 'md' | 'lg' | 'xl';
 
 export default defineConfig({
   base: './',
+  resolve: {
+    alias: {
+      '@images': resolve(__dirname, 'assets', 'images'),
+    },
+  },
   plugins: [
     checkerPlugin({ typescript: true }),
     babelPlugin(),
@@ -63,6 +70,18 @@ export default defineConfig({
             active: false,
           },
         ],
+      },
+    }),
+    fontsPlugin({
+      custom: {
+        families: [
+          {
+            name: 'Raleway',
+            local: 'Raleway',
+            src: './assets/fonts/Raleway-*.ttf',
+          },
+        ],
+        preload: true,
       },
     }),
   ],

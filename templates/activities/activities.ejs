@@ -2,9 +2,9 @@
     <h2>Activités à Marseille</h2>
     <div>
         <% const activities = data('activities'); %>
-        <%- activities.map((activity, index) => include(template('activities/activity'), { activity, index: index + 1 })).join('') %>
-        <!-- for (const activity of activities) {%>
-            - include(template('activities/activity'), { activity, index: 0 }) %>
-         } %> -->
+        <%- activities.map((activity, index) => include(template('activities/activity'), {
+            activity,
+            index: index + 1
+        })).join('') %>
     </div>
 </section>

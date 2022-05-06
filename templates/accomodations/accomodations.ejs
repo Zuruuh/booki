@@ -3,10 +3,10 @@
 <section id="accomodations">
     <section class="container horizontal">
         <header>
-            <b>Hébergements à Marseille</b>
+            <h2>Hébergements à Marseille</h2>
         </header>
         <div class="content">
-            <% for (const accomodation of accomodations.filter((acc) => !acc.popular)) {%>
+            <% for (const accomodation of accomodations.filter((acc) => !acc.popular)) { %>
                 <%- include(template('accomodations/accomodation'), { accomodation, classes: 'card horizontal' }) %>
             <% } %>
         </div>
@@ -19,10 +19,10 @@
     <aside class="container vertical">
         <header>
             <b>Les plus populaires</b>
-            <i class="fa-solid fa-star"></i>    
+            <i class="fa-solid fa-star"></i>
         </header>
         <div class="content">
-            <% for (const accomodation of accomodations.filter((acc) => acc.popular)) {%>
+            <% for (const accomodation of accomodations.filter((acc) => acc.popular)) { %>
                 <%- include(template('accomodations/accomodation'), { accomodation, classes: 'card vertical' }) %>
             <% } %>
         </div>

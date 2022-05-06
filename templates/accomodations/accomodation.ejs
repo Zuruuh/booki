@@ -1,9 +1,10 @@
 <a href="#">
     <article class="<%- classes %> ">
         <%- include(template('assets/image'), {
-                collection: "accomodations",
-                thumbnail: accomodation.thumbnail, attributes: { class: ['card-thumbnail'] }
-            })
+        collection: "accomodations",
+        thumbnail: accomodation.thumbnail, attributes: { class: ['card-thumbnail'] },
+        alt: accomodation.alt,
+        })
         %>
         <div class="card-info">
             <div class="card-text">

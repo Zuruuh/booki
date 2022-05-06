@@ -1,20 +1,21 @@
 <% if (index % 3 === 2) { %>
-    <div class="activity-group">
-<% } %>
-<a href="#"  class="activity <%= activity.size %>">
-    <article>
-        <%- include(template('assets/image'), {
+<div class="activity-group">
+    <% } %>
+    <a href="#" class="activity <%= activity.size %>">
+        <article>
+            <%- include(template('assets/image'), {
             collection: 'activities',
             thumbnail: activity.thumbnail,
             attributes: {
-                class: ['activity-thumbnail']
-            }
-        }) %>
-        <div>
-            <h5><%= activity.title %></h5>
-        </div>
-    </article>
-</a>
-<% if (index % 3 === 0) { %>
-    </div>
+            class: ['activity-thumbnail']
+            },
+            alt: activity.alt
+            }) %>
+            <div>
+                <h5><%= activity.title %></h5>
+            </div>
+        </article>
+    </a>
+    <% if (index % 3 === 0) { %>
+</div>
 <% } %>

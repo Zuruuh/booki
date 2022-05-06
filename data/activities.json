@@ -2,31 +2,37 @@
   {
     "title": "Vieux Port",
     "size": "xl",
-    "thumbnail": "reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+    "thumbnail": "reno-laithienne-QUgJhdY5Fyk-unsplash.jpg",
+    "alt": "Photo du Vieux Port"
   },
   {
     "title": "Fort de Pomègues",
     "size": "lg",
-    "thumbnail": "paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+    "thumbnail": "paul-hermann-QFTrLdQIRhI-unsplash.jpg",
+    "alt": "Photo du Fort de Pomègues"
   },
   {
     "title": "Îles du Frioul",
     "size": "sm",
-    "thumbnail": "kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+    "thumbnail": "kevin-hikari-rV_Qd1l-VXg-unsplash.jpg",
+    "alt": "Photo des Îles du Frioul"
   },
   {
     "title": "Parc National des Calanques",
     "size": "xl",
-    "thumbnail": "kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+    "thumbnail": "kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg",
+    "alt": "Photo du Parc National des Calanques"
   },
   {
     "title": "Notre-Dame-de-la-Garde",
     "size": "md",
-    "thumbnail": "florian-wehde-xW9e8gdotxI-unsplash.jpg"
+    "thumbnail": "florian-wehde-xW9e8gdotxI-unsplash.jpg",
+    "alt": "Photo de Notre-Dame-de-la-Garde"
   },
   {
     "title": "Parc Longchamp",
     "size": "md",
-    "thumbnail": "lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+    "thumbnail": "lena-paulin-wH2-EJoDcV0-unsplash.jpg",
+    "alt": "Photo du Parc Longchamp"
   }
 ]

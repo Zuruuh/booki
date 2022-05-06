@@ -7,7 +7,7 @@ import babelPlugin from 'vite-plugin-babel';
 import fontsPlugin from 'vite-plugin-fonts';
 import { resolve } from 'path';
 
-type Breakpoint = 'sm' | 'md' | 'lg' | 'xl';
+import type { Breakpoint } from './typings';
 
 export default defineConfig({
   base: './',

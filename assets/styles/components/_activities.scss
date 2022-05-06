@@ -4,41 +4,50 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 6rem;
+
   h2 {
     margin-top: 3.25rem;
     font-weight: 700;
     font-size: 1.6rem;
   }
+
   & > div {
     margin-top: 1.35rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.5rem;
+
     .activity-group {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
+
     & > * {
       flex: 1;
+
       & > .activity {
         width: 100%;
       }
     }
+
     .activity {
       display: flex;
       flex-direction: column;
       height: auto;
       margin: 0;
       position: relative;
+
       article {
         border-radius: 1rem;
+
         picture {
           flex: 1 1 auto;
           height: calc(100% - 5.6rem);
         }
+
         img,
         picture {
           width: 100%;
@@ -47,17 +56,20 @@
           border-start-start-radius: 1rem;
           display: inline-block;
         }
+
         img {
           height: 100%;
           max-height: 100%;
         }
+
         & > div {
           height: 5.6rem;
           padding: 2rem;
           width: 100%;
           border-end-end-radius: 1rem;
           border-end-start-radius: 1rem;
-          box-shadow: 0px 10px 60px 1px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.07);
+
           h5 {
             font-weight: 700;
           }
@@ -67,14 +79,54 @@
       &.xl article {
         height: 44.4rem;
       }
+
       &.lg article {
         height: 23.5rem;
       }
+
       &.md article {
         height: 19.5rem;
       }
+
       &.sm article {
         height: 16.5rem;
+      }
+    }
+  }
+}
+
+@include tablet {
+  #activities {
+    h2 {
+      padding-left: 2.2rem;
+    }
+
+    & > div {
+      flex-direction: column;
+      padding: 0 2.2rem;
+      gap: 0;
+
+      & > .activity {
+        margin-bottom: 2.4rem;
+      }
+
+      .activity {
+        &.xl,
+        &.lg,
+        &.md,
+        &.sm {
+          article {
+            height: 16.5rem;
+          }
+        }
+      }
+
+      .activity-group {
+        & > a:first-child {
+          margin-bottom: 2.4rem;
+        }
+
+        margin-bottom: 2.4rem;
       }
     }
   }

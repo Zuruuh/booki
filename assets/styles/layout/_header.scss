@@ -1,9 +1,11 @@
 header.layout {
   @include page-content;
+
   h2 {
     font-size: 1.95rem;
-    margin: 1.6rem 0px;
+    margin: 1.6rem 0;
   }
+
   p {
     font-size: 1.4rem;
   }
@@ -13,23 +15,27 @@ header.layout {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
     & > span {
       font-weight: 800;
       font-size: 1.3rem;
+      margin-right: 3rem;
     }
+
     ul {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      margin: 0px;
-      padding: 0px;
+      padding: 0;
+      gap: 1.5rem;
     }
   }
 
   .info {
     display: flex;
     align-items: center;
-    margin: 2rem 0px;
+    margin: 2rem 0;
+
     i {
       @include flex-center;
       color: $primary;
@@ -41,9 +47,26 @@ header.layout {
       margin-right: 1.2rem;
       font-size: 1.2rem;
     }
+
     h6 {
       font-size: 1.2rem;
       margin: 0;
+    }
+  }
+}
+
+@include tablet {
+  header.layout ul {
+    margin: 1.7rem 0 0;
+  }
+}
+
+@include phone {
+  header.layout {
+    padding: 0 2rem;
+
+    h2 {
+      margin-top: 3.5rem;
     }
   }
 }

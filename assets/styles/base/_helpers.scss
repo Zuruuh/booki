@@ -1,3 +1,23 @@
 .container {
   padding: 15px;
 }
+
+@include tablet {
+  .container {
+    padding: 0;
+  }
+  #accomodations {
+    .container {
+      padding: 0 2rem;
+
+      &:last-child {
+        border-radius: 0;
+        padding-bottom: 3.7rem;
+      }
+
+      &:first-child {
+        background-color: #fff;
+      }
+    }
+  }
+}

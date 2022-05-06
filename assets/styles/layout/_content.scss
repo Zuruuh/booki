@@ -1,3 +1,9 @@
 main {
   @include page-content;
 }
+
+@include tablet {
+  main {
+    padding: 0;
+  }
+}

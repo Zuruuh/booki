@@ -12,7 +12,10 @@
       display: flex;
       justify-content: space-between;
       margin: 1.5rem 0;
-      font-size: 1.6rem;
+
+      h2 {
+        font-size: 2rem;
+      }
     }
 
     footer {
@@ -35,6 +38,7 @@
 
       .fa-star {
         color: $tertiary;
+        font-size: 1.2rem;
 
         &.star-colored {
           color: $primary;

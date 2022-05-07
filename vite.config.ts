@@ -14,6 +14,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@images': resolve(__dirname, 'assets', 'images'),
+      '@fonts': resolve(__dirname, 'assets', 'fonts'),
     },
   },
   plugins: [

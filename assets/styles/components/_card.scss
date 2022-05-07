@@ -31,14 +31,15 @@
       justify-content: space-between;
 
       .card-text {
-        margin-top: 1.2rem;
+        margin-top: 0.9rem;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         color: #000;
 
         span {
-          margin-top: 1.2rem;
+          margin-top: 0.8rem;
+          font-size: 1.3rem;
         }
       }
 
@@ -73,7 +74,7 @@
       flex-direction: column;
       justify-content: space-between;
       max-width: calc(100% - 12.7rem - 2rem - 1rem);
-      margin: 2rem 2rem 1.5rem;
+      margin: 1rem 2.5rem 0.5rem 1.75rem;
 
       .card-text {
         display: flex;
@@ -86,12 +87,13 @@
         }
 
         h5 {
-          font-size: 1.1rem;
+          font-size: 1.5rem;
           font-weight: 800;
         }
 
         span {
           margin-top: 1.4rem;
+          font-size: 1.3rem;
         }
       }
     }

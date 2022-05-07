@@ -19,9 +19,10 @@ form.searchbar {
     border-style: solid;
     border-color: $tertiary;
     padding-right: 4.5rem;
+    padding-left: 1.5rem;
+    outline: 0;
 
     &::placeholder {
-      padding-left: 1.5rem;
       color: #000;
       font-weight: 800;
       font-size: 1.3rem;
